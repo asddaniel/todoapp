@@ -1,0 +1,38 @@
+
+{%extends 'todoapp1/base.html' %}
+
+{% block content %}
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		{% include 'todoapp1/left_sidebar.html' %} 
+		<div id="colorlib-main">
+			<section class="ftco-section ftco-no-pt ftco-no-pb">
+	    	<div class="container">
+	    		<div class="row d-flex">
+	    			<div class="col-xl-8 py-5 px-md-5">
+							<div class="row pt-md-4">
+								<div class="container">
+                                    <form action="" class="form-group">
+                                        <input type="text" class="form-control" placeholder="nom de la categorie">
+                                        
+                                        <br><button class="btn btn-primary" type="submit">Sauvegarder</button>
+                                    </form>
+                                </div>
+									
+							</div>
+
+
+						
+			    	</div>
+	    			
+	    		</div>
+	    	</div>
+	    </section>
+		</div>
+	</div>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+{% endblock %}
